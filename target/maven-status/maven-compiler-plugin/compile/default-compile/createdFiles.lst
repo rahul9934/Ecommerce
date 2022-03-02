@@ -1,0 +1,5 @@
+com\ecommerce\servlets\RegisterServlet.class
+com\ecommerce\entities\User.class
+com\ecommerce\entities\Product.class
+com\ecommerce\helper\FactoryProvider.class
+com\ecommerce\entities\Category.class

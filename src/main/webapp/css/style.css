@@ -1,0 +1,17 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 17, 2022, 10:12:20 AM
+    Author     : Rahul
+*/
+
+
+.custom-bg{
+    background-color: blue !important;
+}
+
+body{
+    background-color: white;
+}
