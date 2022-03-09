@@ -23,7 +23,8 @@
                             <h3>Login Here</h3>
                         </div>
                         <div class="card-body">
-                            <form action="loginServlet" method="post">
+                            <%@include file="common_css_js/message.jsp"%>
+                            <form action="LoginServlet" method="post">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

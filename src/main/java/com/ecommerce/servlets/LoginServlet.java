@@ -4,12 +4,16 @@
  */
 package com.ecommerce.servlets;
 
+import com.ecommerce.dao.UserDao;
+import com.ecommerce.entities.User;
+import com.ecommerce.helper.FactoryProvider;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -27,7 +31,20 @@ public class LoginServlet extends HttpServlet {
            String password=request.getParameter("password");
            
            
-           
+           UserDao userDao=new UserDao(FactoryProvider.getFactory());
+           User user=userDao.getUserEmailPassword(email, password);
+            //System.out.println(user);
+            HttpSession httpSession  =request.getSession();
+            if(user==null){
+                
+                //out.println("<h3>Invalid User</h3>");
+                httpSession.setAttribute("message","Wrong Credentials Please check !!!");
+                response.sendRedirect("login.jsp");
+                return;
+            }else{
+                
+                out.println("<h3>Welcome "+user.getUserName()+"</h3>");
+            }
         }
     }
 

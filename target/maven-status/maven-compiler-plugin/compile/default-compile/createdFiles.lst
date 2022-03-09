@@ -1,5 +1,7 @@
 com\ecommerce\servlets\RegisterServlet.class
-com\ecommerce\entities\User.class
+com\ecommerce\servlets\LoginServlet.class
 com\ecommerce\entities\Product.class
+com\ecommerce\entities\User.class
 com\ecommerce\helper\FactoryProvider.class
+com\ecommerce\dao\UserDao.class
 com\ecommerce\entities\Category.class
