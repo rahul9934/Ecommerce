@@ -103,11 +103,21 @@ public class User {
     public void setUserAddress(String userAddress) {
         this.userAddress = userAddress;
     }
+     public String getuserType() {
+        return userType;
+    }
+
+    public void setuserType(String userType) {
+        this.userType = userType;
+    }
+    
 
     @Override
     public String toString() {
         return "User{" + "userID=" + userID + ", userName=" + userName + ", userEmail=" + userEmail + ", userPassword=" + userPassword + ", userPhone=" + userPhone + ", userPic=" + userPic + ", userAddress=" + userAddress + '}';
     }
+
+
     
     
     
